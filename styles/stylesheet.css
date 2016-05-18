@@ -267,6 +267,7 @@ a {
   background-color: #f3f3f3;
   color: black;
   line-height: 1;
+  cursor: pointer;
 }
 
 .grid-item .caption {
