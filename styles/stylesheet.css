@@ -217,6 +217,9 @@ a:hover {
     margin: 0 auto;
     font-size: 1.1rem;
   }
+  .grid {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
@@ -239,6 +242,9 @@ a:hover {
   .main-content {
     padding: 2rem 4rem;
     font-size: 1.1rem;
+  }
+  .grid {
+    display: flex;
   }
 }
 
@@ -269,25 +275,39 @@ a:hover {
     padding: 2rem 1rem;
     font-size: 1rem;
   }
+  .grid {
+    /* text-align: center; */
+  }
+  div.grid-item {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+    min-width: 200px;
+  }
 }
 
 .grid {
   box-sizing: border-box;
-  justify-content: center;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
 }
 
 .card, .grid-item {
+  /* flex: 1; */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0px;
   max-width: 280px;
   min-width: 200px;
-  flex: 1;
   border-radius: 0.25rem;
   box-shadow: 1px 1px 3px #888;
   min-height: 60px;
   padding: 1rem;
   margin: 0.5rem;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   background-color: #f3f3f3;
   color: black;
   line-height: 1;
